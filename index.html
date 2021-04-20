@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+
+<html lang="en.US">
+
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+    <title> This is title </title>
+
+<script type="text/javascript">
+
+//var result = 0;
+function min(){
+
+  let arg1 = document.querySelector('#value1').value;
+  let arg2 = document.querySelector('#value2').value;
+  let result = (arg1 < arg2 ? arg1 : arg2);
+  alert('The min value is ' + result);
+//  return result;
+}
+
+function listen()
+{
+    document.querySelector('form').addEventListener('submit', min);
+}
+
+document.addEventListener('DOMContentLoaded', listen);
+
+
+//document.write("<h1>result =</h1>");
+
+//document.write(result)
+//document.write(min(12, 23));
+
+//alert(min(12, 23));
+
+
+
+function isEven(_pNum){
+
+  if (_pNum < 0){
+  return -1;
+
+  } else if (_pNum == 0){
+    console.log(true);
+    //return true;
+  } else if (_pNum == 1) {
+    console.log(false);
+    //return false;
+  }
+
+  isEven(_pNum - 2);
+}
+
+console.log(isEven(12));
+
+
+</script>
+
+
+</head>
+
+
+<body>
+
+  <header class="centered large">
+
+    This is the header
+
+  </header>
+
+  <form onsubmit="min(); return false">
+      <input id="value1" type="number">
+      <input id="value2" type="number">
+      <input type="submit">
+      <button>Submit!</button>
+
+  </form>
+
+  <h2>Our List!</h2>
+
+  <ul>
+
+    <li>Step one</li>
+    <li>Step two</li>
+    <li>Step three</li>
+  </ul>
+
+<main>
+
+<h1>This is title again</h1>
+
+<p>Welcome to practice </p>
+
+<a href="https://www.google.com">www.google.com</a>
+<br><br>
+
+<img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" width="50%">
+
+</main>
+
+
+<footer>
+
+  This is the footer with example of Copyright symbol which is called an html entity = &#169;
+
+</footer>
+
+</body>
+
+</html>
+
